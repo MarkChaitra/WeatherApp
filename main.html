@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---<a href="https://www.flaticon.com/free-icons/app" title="app icons">App icons created by Freepik - Flaticon</a>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="weather.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="backend.js"></script>
+    <title>Weather App</title>
+</head>
+<body onload="defaultCards()">
+
+    <div class="title-searchbar">
+        <h1 class="page-title">Weather App</h1>
+
+        <div class="input-searchbutton">
+            <input onclick="clearInput()" type="text" name="citySearch" id="citySearch" placeholder="Enter a city">
+            <button class="citySearch-submit" onclick="searchWeather(document.getElementById('citySearch').value)">Submit</button>
+            <button class="citySearch-submit" onclick="clearCards()">Clear</button>
+        </div>
+    </div>
+
+    <div class="weather-badges"> 
+    </div>
+
+    <footer>
+        © 2025 Mark Chaitra. All rights reserved.
+        <a href="https://ca.linkedin.com/in/mark-chaitra-694703293" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/MarkChaitra" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+    </footer>
+    
+</body>
+</html>
